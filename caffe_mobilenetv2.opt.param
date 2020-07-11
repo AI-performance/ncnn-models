@@ -76,4 +76,4 @@ Convolution              conv6_3/linear           1 1 conv6_3/dwise/bn_relu6_3/d
 Convolution              conv6_4                  1 1 conv6_3/linear/bn_conv6_3/linear/scale conv6_4/bn_relu6_4 -23330=4,3,7,7,1280 0=1280 1=1 5=1 6=409600 9=1
 Pooling                  pool6                    1 1 conv6_4/bn_relu6_4 pool6 -23330=4,1,1280,1,1 0=1 4=1
 InnerProduct             fc7                      1 1 pool6 fc7 -23330=4,1,1000,1,1 0=1000 1=1 2=1280000
-Softmax                  prob                     1 1 fc7 prob -23330=4,1,1000,1,1
+Softmax                  output                   1 1 fc7 output -23330=4,1,1000,1,1
